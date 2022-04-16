@@ -11,7 +11,7 @@
 <body>
 <div layout:fragment="content1"> <!-- cad on va chercher content1 et on va placer ce contenu !-->
     <div class="col-md-6 offset-3">
-        <form method="post" th:action="@{save(page=${page},keyword=${keyword})}">
+        <form method="post" th:action="@{/admin/save(page=${page},keyword=${keyword})}">
             <div>
                 <label>ID :</label>
                 <label th:text="${patient.id}"></label>
